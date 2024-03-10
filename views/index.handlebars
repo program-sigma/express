@@ -1,0 +1,9 @@
+<h1 class="my-3">Телефонный справочник</h1>
+<div class="overflow-auto" style="height: 200px">
+    {{#each directory}}
+        {{> button}}
+    {{/each}}
+</div>
+<div class="my-3">
+    <a class="btn btn-success" href="/add" {{#if isAddDisabled}}disabled{{/if}}>Добавить</a>
+</div>
